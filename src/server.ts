@@ -30,8 +30,8 @@ app.use(rateLimiter);
 app.use(requestLogger());
 
 // Routes
-app.use('/health-check', healthCheckRouter);
-app.use('/users', userRouter);
+app.use('/api/health-check', healthCheckRouter);
+app.use('/api/users', userRouter);
 
 // Swagger UI
 app.use(openAPIRouter);
